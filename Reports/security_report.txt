@@ -1,0 +1,13 @@
+SECURITY LOG ANALYSIS REPORT
+Scan Date/Time: 2026-09-26 21:06:31.482807
+----------------------------------------
+Total Events: 10
+Successful Logins: 3
+Failed Logins: 7
+
+SUSPICIOUS IP ADDRESSES
+----------------------------------------
+- 192.168.1.15 (3 failed attempts)
+  (Reason: repeated failed logins, possible brute-force)
+- 192.168.1.30 (4 failed attempts)
+  (Reason: repeated failed logins, possible brute-force)
