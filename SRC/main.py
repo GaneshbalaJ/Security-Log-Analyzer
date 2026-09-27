@@ -23,7 +23,7 @@ def analyze(entries):
         "failed_by_ip": failed_by_ip
     }
 
-def write_report(stats, suspicious_ips, filepath="reports/security_report.txt"):
+def write_report(stats, suspicious_ips, filepath="Reports/Security_Report.txt"):
     with open(filepath, "w") as file:
         file.write("SECURITY LOG ANALYSIS REPORT\n")
         file.write(f"Scan Date/Time: {datetime.now()}\n")
@@ -42,7 +42,7 @@ def write_report(stats, suspicious_ips, filepath="reports/security_report.txt"):
             file.write("No suspicious activity detected.\n")
 
 def main():
-    entries = parse_log_file("logs/security.log")
+    entries = parse_log_file("Logs/Security.log")
     stats = analyze(entries)
     suspicious_ips = detect_suspicious_ips(stats["failed_by_ip"])
 
